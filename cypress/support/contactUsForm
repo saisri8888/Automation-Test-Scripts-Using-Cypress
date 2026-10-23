@@ -1,0 +1,46 @@
+Cypress.Commands.add('homePageConfirmationMessage',()=>{
+    cy.contains('h2','Features Items')
+})
+
+Cypress.Commands.add('contactUsButton',()=>{
+    cy.get('a[href="/contact_us"]')
+})
+
+Cypress.Commands.add('getInTouchText',()=>{
+    cy.contains('h2','Get In Touch')
+})
+
+Cypress.Commands.add('nameField',()=>{
+    cy.get('[data-qa="name"]')
+})
+
+Cypress.Commands.add('emailField',()=>{
+    cy.get('[data-qa="email"]')
+})
+
+Cypress.Commands.add('subjectField',()=>{
+    cy.get('[data-qa="subject"]')
+
+})
+
+Cypress.Commands.add('messageField',()=>{
+    cy.get('[data-qa="message"]')
+})
+
+Cypress.Commands.add('fileUpload',()=>{
+    cy.get('[name="upload_file"]')
+
+})
+
+Cypress.Commands.add('submitButton',()=>{
+    cy.get('[data-qa="submit-button"]')
+})
+
+Cypress.Commands.add('successMessage',()=>{
+    cy.get('[class="status alert alert-success"]')
+})
+
+Cypress.Commands.add('homeButton',()=>{
+    cy.get('#form-section').find('a.btn.btn-success')
+})
+
